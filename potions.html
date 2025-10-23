@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atoms - Snape's Lessons</title>
+<link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gradient-to-b from-green-900 to-green-800 min-h-screen">
+<custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-green-400 mb-8 text-center font-serif">Atoms</h1>
+<div class="relative mb-8">
+    <div class="relative max-w-md mx-auto">
+        <input type="text" placeholder="Search potion topics..." 
+               class="w-full py-3 px-5 rounded-full border-2 border-slate-600 focus:border-emerald-400 focus:outline-none bg-slate-800 bg-opacity-70 backdrop-blur-sm text-gray-200 placeholder-gray-400"
+               id="searchInput">
+        <button data-search-button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-emerald-400 hover:text-emerald-300 cursor-pointer">
+            <i data-feather="search"></i>
+        </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 potion-cards" id="potionsContainer">
+<!-- Potion 1 -->
+                <div class="bg-green-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<img src="http://static.photos/medical/640x360/1" alt="Wolfsbane Potion" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-red-500 text-white text-xs px-2 py-1 rounded-full mr-2">Advanced</span>
+                        <span class="text-green-400 text-sm">Difficulty: ★★★★★</span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-black mb-2">Atomic Structure</h2>
+<p class="text-gray-300 mb-4">Understanding protons, neutrons, and electrons - the fundamental building blocks of all matter.</p>
+<a href="#" class="text-green-400 hover:text-green-300 flex items-center">
+                        View Recipe <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Potion 2 -->
+            <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                <img src="http://static.photos/medical/640x360/2" alt="Polyjuice Potion" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <span class="bg-purple-500 text-white text-xs px-2 py-1 rounded-full mr-2">Essential</span>
+                        <span class="text-green-400 text-sm">Difficulty: ★★★★☆</span>
+                    </div>
+                    <h2 class="text-2xl font-bold text-black mb-2">Electron Configuration</h2>
+<p class="text-gray-300 mb-4">How electrons are arranged in atoms and how this determines chemical properties and reactivity.</p>
+<a href="#" class="text-green-400 hover:text-green-300 flex items-center">
+                        View Recipe <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="components/navbar.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

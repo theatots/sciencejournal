@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Lessons - Snape's Classroom</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-gradient-to-b from-green-900 to-green-800 min-h-screen">
+<custom-navbar></custom-navbar>
+
+    <main class="container mx-auto px-4 py-12">
+        <h1 class="text-4xl font-bold text-emerald-400 mb-8 text-center font-serif">Chemistry Lessons</h1>
+<div class="relative mb-8">
+    <div class="relative max-w-md mx-auto">
+        <input type="text" placeholder="Search lessons..." 
+               class="w-full py-3 px-5 rounded-full border-2 border-slate-600 focus:border-emerald-400 focus:outline-none bg-slate-800 bg-opacity-70 backdrop-blur-sm text-gray-200 placeholder-gray-400"
+               id="searchInput">
+        <button data-search-button class="absolute right-3 top-1/2 transform -translate-y-1/2 text-emerald-400 hover:text-emerald-300 cursor-pointer">
+            <i data-feather="search"></i>
+        </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lesson-cards" id="lessonsContainer">
+<!-- Lesson 1 -->
+                <div id="lesson-1" class="bg-green-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-green-500/20">
+<img src="http://static.photos/science/640x360/1" alt="Atomic Models" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 1</span>
+</div>
+<h2 class="text-2xl font-bold text-black mb-2">History of Atomic Models</h2>
+<p class="text-gray-300 mb-4">From Dalton to Bohr and the quantum mechanical model - understand the evolution of atomic theory.</p>
+                    <a href="/journal-entry-1.html" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+            <!-- Lesson 2 -->
+                <div id="lesson-2" class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/2" alt="Subatomic Particles" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 2</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">Subatomic Particles</h2>
+<p class="text-gray-300 mb-4">Protons, neutrons, and electrons - their properties and how they form the basis of all matter.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+            <!-- Lesson 3 -->
+                <div id="lesson-3" class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/3" alt="Isotopes" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 3</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">Isotopes and Ions</h2>
+<p class="text-gray-300 mb-4">Variations of atoms - how isotopes differ and how ions gain or lose electrons.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+
+            <!-- Lesson 4 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/4" alt="Periodic Table" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 4</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">History of the Periodic Table</h2>
+                    <p class="text-gray-300 mb-4">From Mendeleev to modern organization - how elements found their place.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+
+            <!-- Lesson 5 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/5" alt="Periods and Groups" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 5</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">Periods and Groups</h2>
+                    <p class="text-gray-300 mb-4">Understanding the organization of elements in the periodic table.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+
+            <!-- Lesson 6 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/6" alt="Atomic Radius" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 6</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">Periodic Trend: Atomic Radius</h2>
+                    <p class="text-gray-300 mb-4">How and why the size of atoms changes across periods and down groups.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+
+            <!-- Lesson 7 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/7" alt="Ionization Energy" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 7</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">Periodic Trend: Ionization Energy</h2>
+                    <p class="text-gray-300 mb-4">Understanding the energy required to remove an electron from an atom.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+
+            <!-- Lesson 8 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/8" alt="Electronegativity" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 8</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">Periodic Trend: Electronegativity</h2>
+                    <p class="text-gray-300 mb-4">How an atom's ability to attract electrons changes across the periodic table.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+
+            <!-- Lesson 9 -->
+                <div class="bg-slate-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 hover:shadow-emerald-500/20">
+<img src="http://static.photos/science/640x360/9" alt="Electron Affinity" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <div class="flex items-center mb-3">
+                        <i data-feather="clock" class="text-emerald-400 mr-2"></i>
+                        <span class="text-emerald-400 text-sm">Lesson 9</span>
+</div>
+                    <h2 class="text-2xl font-bold text-gray-100 mb-2">Periodic Trend: Electron Affinity</h2>
+                    <p class="text-gray-300 mb-4">The energy change when an electron is added to a neutral atom.</p>
+                    <a href="#" class="text-emerald-400 hover:text-emerald-300 flex items-center">
+View Lesson Notes <i data-feather="arrow-right" class="ml-2"></i>
+                    </a>
+</div>
+            </div>
+</div>
+    </main>
+
+    <script src="components/navbar.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
